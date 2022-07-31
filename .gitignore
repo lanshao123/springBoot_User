@@ -1,0 +1,7 @@
+# Project exclude paths
+/springcloud_common/target/
+/springcloud_consumer/target/
+/springcloud_feign/target/
+/springcloud_gateway/target/
+/springcloud_provider/target/
+/springcloud_provider_redis/target/

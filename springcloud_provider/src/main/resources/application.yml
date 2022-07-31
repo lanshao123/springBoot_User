@@ -1,0 +1,22 @@
+server:
+  port: 12033
+spring:
+  application:
+    name: springcloud-provider
+  datasource:
+    url: jdbc:mysql://localhost:3306/consumer?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        namespace: d0442d84-d7d4-40dc-a3b9-eb46435f39c7
+mybatis:
+  mapper-locations: classpath:mybatis/mapper/*.xml
+mapper:
+  mappers: tk.mybatis.mapper.common.Mapper
+  not-empty: false
+  identity: MYSQL
+  style: camelhump

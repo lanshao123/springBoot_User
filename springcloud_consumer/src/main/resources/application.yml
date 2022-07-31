@@ -1,0 +1,13 @@
+server:
+  port: 12034
+spring:
+  application:
+    name: springcloud-consumer
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        namespace: d0442d84-d7d4-40dc-a3b9-eb46435f39c7
+    sentinel:
+      transport:
+        dashboard: 127.0.0.1:8080
